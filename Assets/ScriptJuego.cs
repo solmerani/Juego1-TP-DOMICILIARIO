@@ -9,6 +9,7 @@ using System;
 public class ScriptJuego : MonoBehaviour
 {
     public Text objeto1;
+    int suma;
     public Text objeto2;
     public InputField resul;
     public GameObject panelBien;
@@ -16,11 +17,13 @@ public class ScriptJuego : MonoBehaviour
     public GameObject panelNoResponde;
     public ProductoScript[] productos1;
     public ProductoScript[] productos2;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         resetjuego();
+        
 
     }
     bool checkearSuma(int num1, int num2, int resul)
